@@ -68,14 +68,10 @@
                 button.addEventListener( 'click', function(e) {
                     e.preventDefault();
 
-                    let text = document.getElementById( 'textarea' );
-                    let name = document.getElementById( 'name' );
-                    let extension = document.getElementById( 'extension' );
-
                     let datafile = {
-                        data: String( text.value ),
-                        name: String( name.value ),
-                        ext : String( extension.value )
+                        data: String( document.getElementById( 'textarea' ) ),
+                        name: String( document.getElementById( 'name' ) ),
+                        ext : String( document.getElementById( 'extension' ) )
                     };
 
                     const file = new generateFile( datafile.data, datafile.name, datafile.ext);
