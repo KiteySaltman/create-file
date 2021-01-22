@@ -9,7 +9,7 @@
 class generateFile{
     constructor( data, fileName, ext, element = false){
 
-        var object_file = this;
+        let object_file = this;
         
         new Promise( ( resolve, failureCallback ) => {
 
@@ -83,7 +83,7 @@ class generateFile{
      */
     download(){
 
-        var object_file = this;
+        let object_file = this;
 
         new Promise( ( resolve, failureCallback ) => {
             setTimeout( () => {
